@@ -273,7 +273,7 @@ $(document).ready(function () {
 $(function () {
 	$('[data-toggle="tooltip"]').tooltip()
 });
-//Quote
+//Contact form
 $(document).ready(function () {
     $("#news-t").click(function (event) {
         event.preventDefault();
