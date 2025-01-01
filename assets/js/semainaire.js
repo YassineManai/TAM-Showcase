@@ -5,17 +5,25 @@ $(document).ready(function () {
         $("#j2").hide();
         $("#bj3").hide();
         $("#j3").hide();
+        $("#j4").hide();
+        $("#bj4").hide();
         $("#bj1").show();
         $("#j1").show();
+       
+
     });
     $("#card2").click(function (event) {
         event.preventDefault();
+        $("#j4").hide();
+        $("#bj4").hide();
         $("#bj1").hide();
         $("#j1").hide();
         $("#bj3").hide();
         $("#j3").hide();
         $("#bj2").show();
         $("#j2").show();
+       
+
     });
     $("#card3").click(function (event) {
         event.preventDefault();
@@ -23,8 +31,23 @@ $(document).ready(function () {
         $("#j1").hide();
         $("#bj2").hide();
         $("#j2").hide();
+        $("#j4").hide();
+        $("#bj4").hide();
         $("#bj3").show();
         $("#j3").show();
+        
+    });
+    $("#card4").click(function (event) {
+        event.preventDefault();
+        $("#bj1").hide();
+        $("#j1").hide();
+        $("#bj2").hide();
+        $("#j2").hide();
+        $("#bj3").hide();
+        $("#j3").hide();
+        $("#j4").show();
+        $("#bj4").show();
+
     });
 });
 
