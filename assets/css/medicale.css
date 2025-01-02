@@ -494,10 +494,7 @@ a.btn-customized-4.btn-customized-light.btn.btn-primary:not(:disabled):not(.disa
 .top-content {
 	width: 100%;
 	height: 60vh;
-	background:
-		linear-gradient(rgba(0, 0, 0, 0.5),
-			rgba(0, 0, 0, 0.5)),
-		url(../img/backgrounds/17.jpg);
+	
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size:cover;
@@ -508,7 +505,7 @@ a.btn-customized-4.btn-customized-light.btn.btn-primary:not(:disabled):not(.disa
 	padding-top: 180px;
 }
 
-@media screen and (min-width: 480px) and (max-width: 500px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
 	.top-content h1 {
 		padding-top: 80px;
 	}
@@ -545,7 +542,6 @@ a.btn-customized-4.btn-customized-light.btn.btn-primary:not(:disabled):not(.disa
 }
 
 
-
 /***** Section about *****/
 .section-0 {
 	height: 100vh;
@@ -559,7 +555,7 @@ a.btn-customized-4.btn-customized-light.btn.btn-primary:not(:disabled):not(.disa
 .about-img {
 	width: 100%;
 	height: 45vh;
-	background-image: url(../img/backgrounds/t1.jpg);
+	background-image: url(../img/backgrounds//t3.png);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -568,7 +564,7 @@ a.btn-customized-4.btn-customized-light.btn.btn-primary:not(:disabled):not(.disa
 .about-img2 {
 	width: 100%;
 	height: 45vh;
-	background-image: url(../img/backgrounds/t2.jpg);
+	background-image: url(../img/backgrounds//t4.jpeg);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -577,7 +573,7 @@ a.btn-customized-4.btn-customized-light.btn.btn-primary:not(:disabled):not(.disa
 .about-img3 {
 	width: 100%;
 	height: 45vh;
-	background-image: url(../img/backgrounds//t3.png);
+	background-image: url(../img/agile.jpeg);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -1327,94 +1323,3 @@ ul.breadcrumb li a:hover {
     color: #007bff;
     font-weight: bold;
 }
-
-
-
-
-
-
-
-
-  
-  /* Position the image container (needed to position the left and right arrows) */
-  .container1{
-    position: relative;
-  }
-  
-  /* Hide the images by default */
-  .mySlides {
-    display: none;
-  }
-  
-  /* Add a pointer when hovering over the thumbnail images */
-  .cursor {
-    cursor: pointer;
-  }
-  
-  /* Next & previous buttons */
-  .prev,
-  .next {
-    cursor: pointer;
-    
-    top: 40%;
-    width: auto;
-    padding: 16px;
-    margin-top: -50px;
-    color: white;
-    font-weight: bold;
-    font-size: 20px;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-    -webkit-user-select: none;
-  }
-  
-  /* Position the "next button" to the right */
-  .next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-  }
-  
-  /* On hover, add a black background color with a little bit see-through */
-  .prev:hover,
-  .next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-  }
-  
-  /* Number text (1/3 etc) */
-  .numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-  }
-  
-  /* Container for image text */
-  .caption-container {
-    text-align: center;
-    background-color: #222;
-    padding: 2px 16px;
-    color: white;
-  }
-  
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
-  /* Six columns side by side */
-  .column {
-    float: left;
-    width: 16.66%;
-  }
-  
-  /* Add a transparency effect for thumnbail images */
-  .demo {
-    opacity: 0.6;
-  }
-  
-  .active,
-  .demo:hover {
-    opacity: 1;
-  }
