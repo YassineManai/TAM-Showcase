@@ -493,7 +493,12 @@ a.btn-customized-4.btn-customized-light.btn.btn-primary:not(:disabled):not(.disa
 
 .top-content {
 	width: 100%;
-	height: 100vh;
+	height: 60vh;
+	
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size:cover;
+	background-attachment: fixed;
 }
 
 .top-content h1 {
@@ -550,7 +555,25 @@ a.btn-customized-4.btn-customized-light.btn.btn-primary:not(:disabled):not(.disa
 .about-img {
 	width: 100%;
 	height: 45vh;
-	background-image: url(../img/meeting.png);
+	background-image: url(../img/backgrounds//t30.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	border: 5px solid #e05a2c;
+}
+.about-img2 {
+	width: 100%;
+	height: 45vh;
+	background-image: url(../img/backgrounds//t22.jpeg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	border: 5px solid #e05a2c;
+}
+.about-img3 {
+	width: 100%;
+	height: 45vh;
+	background-image: url(../img/backgrounds//t24.jpg);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -779,7 +802,7 @@ ul.breadcrumb li a:hover {
 }
 @media screen and (min-width: 767px) and (max-width: 2000px) {
 	.about-img{
-		height: 51.5%;
+		height: 90%;
 	}
 }
 
@@ -1273,3 +1296,30 @@ ul.breadcrumb li a:hover {
 	margin-right: 10px;
 }
 
+
+#info {
+    background-color: #DCE1E3;
+   
+}
+/* Styling Key Points */
+.key-points {
+    margin: 20px 0;
+    padding: 0;
+    list-style-type: none;
+    color: #555;
+}
+
+.key-points li {
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+    line-height: 1.6;
+}
+
+.key-points li::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    color: #007bff;
+    font-weight: bold;
+}
