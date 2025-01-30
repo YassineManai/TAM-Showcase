@@ -308,12 +308,12 @@ $(document).ready(function(){
 
 
 (function() {
-    emailjs.init("mMKlytFASpmxVI-7K"); // Replace with your EmailJS user ID
+    emailjs.init("PuaDPaAxGYtiZl8x3"); // Replace with your EmailJS user ID
   })();
 
   document.getElementById('contactForm').addEventListener('submit', function(event) {
     event.preventDefault();
-    emailjs.sendForm('service_7xsb8xl', 'template_xo4lujp', this)
+    emailjs.sendForm('service_cmskk2t', 'template_3odat9o', this)
       .then(function(response) {
         alert('Message sent successfully!');
       }, function(error) {

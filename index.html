@@ -78,28 +78,10 @@
 				</ul>
 			</li>
 		</ul>
-		<div class="call">
-			<div class="hed">
-				<h4 data-toggle="tooltip" title="Click Here To Request a Call!" id="tops">demande <span
-						class="piga">d'appel <i class="fas fa-phone"></i></span></h4>
-			</div>
-			<form action="" id="myValid" class="was-validated">
-				<div class="form-group">
-					<input type="text" class="form-control" id="number" placeholder="Phone Number" required>
-					<div c }lass="valid-feedback">Validé.</div>
-					<div class="invalid-feedback">Replmir ce case </div>
-				</div>
-				<div class="form-group">
-					<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-				</div>
-				<button type="submit" id="callBtn" class="btn btn-primary">Soumettre une demande</button>
-			</form>
-		</div>
+		
 		<div class="cols">
-			<a href="#" class="fab fa-facebook-f"></i></a>
-			<a href="#" class="fab fa-twitter"></i></a>
-			<a href="#" class="fab fa-linkedin"></i></a>
-			<a href="#" class="fas fa-envelope"></i></a>
+			<a href="https://www.facebook.com/societe.tam.16?mibextid=ZbWKwL" class="fab fa-facebook-f"></i></a>
+			
 		</div>
 	</nav>
 	<!-- open sidebar menu -->
@@ -134,7 +116,7 @@
 						<!--modal for quotation-->
 						<div class="buttons wow fadeInUp">
 							<a class="btn btn-primary btn-lg btn-customized" id="hey" data-toggle="tooltip"
-								title="Click Here to Find the Right Solution For Your Business" href="#section-1" role="button">
+								title="Cliquer ici pour voir notre services" href="#section-1" role="button">
 								<i class="fas fa-book-open"></i> Services
 							</a>
 							<a class="btn btn-primary btn-lg btn-customized-2" id="hey" href="#expertize" role="button">
@@ -250,8 +232,10 @@
 								<h3>Seminaire</h3>
 							</div>
 							<p>
-								Organisation de séminaires interactifs et enrichissants pour partager des idées, des
-								innovations et des expertises dans divers secteurs.
+	
+								Proposons des cycles de séminaires de perfectionnement pour les professionnels dans
+								 divers domaines de compétences
+								
 							</p>
 							<div class="mafooter">
 								<a href="seminaire.html">
@@ -292,8 +276,8 @@
 								<h3>Assistance médicale </h3>
 							</div>
 							<p>
-								Fournit des services d'accompagnement et de conseil médical pour garantir le bien-être
-								et la santé des bénéficiaires.
+								Nous offrons un service d'accompagnement et d'assistance médicale  pour garantir les 
+								meilleures conditions de soins et de convalescence.
 							<div class="mafooter">
 								<a href="medicale.html">
 									<i id="arrow4" class="fas fa-check-circle"></i>
@@ -343,8 +327,7 @@
 								<h3>Marketing pour les Enterprises Tunisien </h3>
 							</div>
 							<p>
-								Soutien des entreprises tunisiennes dans la conception et la mise en œuvre de stratégies
-								marketing innovantes pour atteindre leurs objectifs.
+								Plans d'actions marketing à l'export pour les entreprises.
 							</p>
 							<div class="mafooter">
 								<a href="marketing.html">
@@ -493,15 +476,27 @@
 									</div>
 									<div class="form-group col-sm-6">
 									  <label for="societeTel">Numéro Téléphone Fax</label>
-									  <input type="text" class="form-control" name="societeTel" id="societeTel" placeholder="(000) 000-0000">
+									  <input type="tel" class="form-control" name="societeTel" id="societeTel" placeholder="..">
 									</div>
 								  </div>
 								  <div class="form-row">
 									<div class="form-group col-sm-6">
 									  <label for="societeMobile">Numéro Téléphone Mobile</label>
-									  <input type="text" class="form-control" name="societeMobile" id="societeMobile" placeholder="(000) 000-0000">
+									  <input type="tel" class="form-control" name="societeMobile" id="societeMobile" placeholder="..">
 									</div>
+									<div class="form-group col-sm-6">
+										<label for="societeMobile">Domaine d'activité</label>
+										<input type="text" class="form-control" name="societeDomaine" id="societeMobile" placeholder="..">
+									  </div>
 								  </div>
+								  <div class="form-row">
+									<div class="form-group col-sm-12">
+										<label for="societeAutre">Autre</label>
+										<textarea class="form-control" name="societeAutre" id="societeAutre" rows="5" placeholder="..."></textarea>
+									  </div>
+								  </div>
+								 
+									
 								</div>
 							  
 								<!-- Personne Physique Fields -->
@@ -528,10 +523,20 @@
 								  </div>
 								  <div class="form-row">
 									<div class="form-group col-sm-6">
-									  <label for="personneNationalite">Nationalité</label>
-									  <input type="text" class="form-control" name="personneNationalite" id="personneNationalite" placeholder="Nationalité">
-									</div>
+										<label for="societeMobile">Numéro Téléphone Mobile</label>
+										<input type="tel" class="form-control" name="personneMobile" id="personneMobile" placeholder="..">
+									  </div>
+									<div class="form-group col-sm-6">
+										<label for="personneNationalite">Expertise</label>
+										<input type="text" class="form-control" name="personneExpertise" id="personneNationalite" placeholder="Expertise">
+									  </div>
 								  </div>
+								  <div class="form-row">
+									<div class="form-group col-sm-12">
+										<label for="personeAutre">Autre</label>
+										<textarea class="form-control" name="personeAutre" id="personeAutre" rows="5" placeholder="..."></textarea>
+									  </div>
+									
 								</div>
 							  
 								<!-- Submit Button -->
@@ -582,8 +587,7 @@
 				<div class="row">
 					<div class="col-md-12">
 						<div class="myHead">
-							<h3> Nous avons compilé quelques avis de patients que nous avons accompagnés dans leur
-								démarche de soin en Tunisie. Découvrez leurs témoignages ici !</h3>
+							<h3>Nous avons compilé quelques avis de patients que nous avons assistés durant leur séjour médical en Tunisie.</h3>
 
 						</div>
 					</div>
@@ -655,14 +659,14 @@
                         <div class="carousel-item">
                             <div class="col-md-2">
                                 <div class="card card-body">
-                                    <img class="img-fluid" src="assets/img/partners/a2.jpeg">
+                                    <img class="img-fluid" src="assets/img/partners/a2.png">
                                 </div>
                             </div>
                         </div>
                         <div class="carousel-item">
                             <div class="col-md-2">
                                 <div class="card card-body">
-                                    <img class="img-fluid" src="assets/img/partners/a3.jpg">
+                                    <img class="img-fluid" src="assets/img/partners/a3.png">
                                 </div>
                             </div>
                         </div>
@@ -676,42 +680,77 @@
                         <div class="carousel-item">
                             <div class="col-md-2">
                                 <div class="card card-body">
-                                    <img class="img-fluid" src="assets/img/partners/a5.jpg">
+                                    <img class="img-fluid" src="assets/img/partners/a5.png">
                                 </div>
                             </div>
                         </div>
                         <div class="carousel-item">
                             <div class="col-md-2">
                                 <div class="card card-body">
-                                    <img class="img-fluid" src="assets/img/partners/a6.jpg">
+                                    <img class="img-fluid" src="assets/img/partners/a6.png">
                                 </div>
                             </div>
                         </div>
                         <div class="carousel-item">
                             <div class="col-md-2">
                                 <div class="card card-body">
-                                    <img class="img-fluid" src="assets/img/partners/a7.jpg">
+                                    <img class="img-fluid" src="assets/img/partners/a7.png">
                                 </div>
                             </div>
                         </div>
                         <div class="carousel-item">
                             <div class="col-md-2">
                                 <div class="card card-body">
-                                    <img class="img-fluid" src="assets/img/partners/A8.jpg">
+                                    <img class="img-fluid" src="assets/img/partners/a8.png">
                                 </div>
                             </div>
                         </div>
                         <div class="carousel-item">
                             <div class="col-md-2">
                                 <div class="card card-body">
-                                    <img class="img-fluid" src="assets/img/partners/A9.png">
+                                    <img class="img-fluid" src="assets/img/partners/a9.png">
                                 </div>
                             </div>
                         </div>
                         <div class="carousel-item">
                             <div class="col-md-2">
                                 <div class="card card-body">
-                                    <img class="img-fluid" src="assets/img/partners/a10.jpg">
+                                    <img class="img-fluid" src="assets/img/partners/a10.png">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="col-md-2">
+                                <div class="card card-body">
+                                    <img class="img-fluid" src="assets/img/partners/a11.png">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="col-md-2">
+                                <div class="card card-body">
+                                    <img class="img-fluid" src="assets/img/partners/a12.png">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="col-md-2">
+                                <div class="card card-body">
+                                    <img class="img-fluid" src="assets/img/partners/a13.png">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="col-md-2">
+                                <div class="card card-body">
+                                    <img class="img-fluid" src="assets/img/partners/a14.png">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="col-md-2">
+                                <div class="card card-body">
+                                    <img class="img-fluid" src="assets/img/partners/a15.png">
                                 </div>
                             </div>
                         </div>
@@ -786,7 +825,7 @@
 					<h3>Contact</h3>
 					<ol>
 						<li><a>Responsable et Directeur Géneral :</a> </li>
-						<li>Mr Abdelmoumouni Hamami</li>
+						<li>Mr A.M.H</li>
 						<li>Emails: <a href="mailto:Management@tam.com.tn">Management@tam.com.tn </a></li>
 						<li>Phone: (+216) 54 773 197</li>
 					</ol>
@@ -805,9 +844,7 @@
 					</ol>
 				</div>
 				<div class="col item social">
-					<a href="https://www.facebook.com/profile.php?id=100063548414530&mibextid=ZbWKwL" class="fab fa-facebook-f"></i></a>
-					<a href="#" class="fab fa-twitter"></i></a>
-					<a href="#" class="fab fa-linkedin"></i></a>
+					<a href="https://www.facebook.com/societe.tam.16?mibextid=ZbWKwL" class="fab fa-facebook-f"></i></a>
 					<a href="mailto:Management@tam.com.tn" class="fas fa-envelope"></i></a>
 					<div class="foot-log">
 						<img src="assets/img/logo/4.png" alt="">

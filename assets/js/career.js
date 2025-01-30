@@ -210,3 +210,41 @@ $(document).ready(function () {
         $("#jumbs").hide(1000);
     });
 });
+
+
+(function() {
+    emailjs.init("PuaDPaAxGYtiZl8x3"); // Replace with your EmailJS user ID
+  })();
+
+  document.getElementById('contactForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    emailjs.sendForm('service_cmskk2t', 'template_3odat9o', this)
+      .then(function(response) {
+        alert('Message sent successfully!');
+      }, function(error) {
+        alert('Failed to send the message. Please try again.');
+        console.error(error);
+      });
+  });
+
+// Toggle Fields Based on Selected Entity Type
+document.addEventListener('DOMContentLoaded', function () {
+    const societeRadio = document.getElementById('societe');
+    const personneRadio = document.getElementById('personne');
+    const societeFields = document.getElementById('societeFields');
+    const personneFields = document.getElementById('personneFields');
+
+    societeRadio.addEventListener('change', function () {
+      if (societeRadio.checked) {
+        societeFields.style.display = 'block';
+        personneFields.style.display = 'none';
+      }
+    });
+
+    personneRadio.addEventListener('change', function () {
+      if (personneRadio.checked) {
+        personneFields.style.display = 'block';
+        societeFields.style.display = 'none';
+      }
+    });
+  });

@@ -71,28 +71,10 @@
                 <a href="#partners"><i class="fas fa-user-check"></i>Nos Partenaires</a>
             </li>
         </ul>
-        <div class="call">
-            <div class="hed">
-                <h4 data-toggle="tooltip" title="Click Here To Request a Call!" id="tops">demande <span
-                        class="piga">d'appel <i class="fas fa-phone"></i></span></h4>
-            </div>
-            <form action="" id="myValid" class="was-validated">
-                <div class="form-group">
-                    <input type="text" class="form-control" id="number" placeholder="Phone Number" required>
-                    <div c }lass="valid-feedback">Validé.</div>
-                    <div class="invalid-feedback">Replmir ce case </div>
-                </div>
-                <div class="form-group">
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                </div>
-                <button type="submit" id="callBtn" class="btn btn-primary">Soumettre une demande</button>
-            </form>
-        </div>
+       
         <div class="cols">
-            <a href="#" class="fa fa-facebook"></i></a>
-            <a href="#" class="fa fa-twitter"></i></a>
-            <a href="#" class="fa fa-linkedin"></i></a>
-            <a href="#" class="fa fa-instagram"></i></a>
+            <a href="https://www.facebook.com/societe.tam.16?mibextid=ZbWKwL" class="fab fa-facebook-f"></i></a>
+
         </div>
     </nav>
     <!-- open sidebar menu -->
@@ -321,77 +303,139 @@
             </div>
         </div>
         <div class="container" id="jumbs">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="jumbotron" style="background-color: #3976af;border: 5px solid #e55c2e;">
-                        <div class="J-head">
-                            <h2 style="color: white;">Contactez <span style="color: #e55c2e;">Nous</span></h2>
-                        </div>
-                        <div class="J-body">
-                            <p>Besoin d’une assistance? Remplir cette formulaire</p>
-                            <form>
-                                <div class="form-row">
-                                    <div class="form-group col-sm-6 col-md-6 col-lg-6">
-                                        <label for="inputFname">Nom</label>
-                                        <input type="text" class="form-control" id="fname" placeholder="First Name">
-                                    </div>
-                                    <div class="form-group col-sm-6 col-md-6 col-lg-6">
-                                        <label for="lName">Prénom</label>
-                                        <input type="text" class="form-control" id="lname" placeholder="Last Name">
-                                    </div>
-                                </div>
-                                <div class="form-row">
-                                    <div class="form-group col-sm-6 col-md-6 col-lg-6">
-                                        <label for="tel">Numéro Téléphone</label>
-                                        <input type="text" class="form-control" id="tel" placeholder="(000) 000-0000">
-                                    </div>
-                                    <div class="form-group col-sm-6 col-md-6 col-lg-6">
-                                        <label for="mail">Email</label>
-                                        <input type="email" class="form-control" id="mail"
-                                            placeholder="Ex:myname@example.com">
-                                    </div>
-                                </div>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="jumbotron" style="background-color: #3976af;border: 5px solid #e55c2e;">
+						<div class="J-head">
+							<h2 style="color: white;">Contactez <span style="color: #e55c2e;">Nous</span></h2>
+						</div>
+						<div class="J-body">
+							<p>Besoin d’une assistance? Remplir cette formulaire</p>
+							
 
-                                <div class="form-row" id="mambo">
-                                    <div class="form-group col-sm-6 col-md-6 col-lg-6">
-                                        <label for="inputCity">Type de Service</label>
-                                        <select id="inputState" class="form-control">
-                                            <option selected>Choose...</option>
-                                            <option>Formation</option>
-                                            <option>Séminaire</option>
-                                            <option>Assistance médicale</option>
-                                            <option>Consulting international</option>
-                                            <option>Marketing pour des Enterprise Tunisian</option>
-                                            <option>Presentation de service</option>
-                                            <option>Conseiller</option>
-                                            <option>Etude de projet</option>
+							<form id="contactForm">
+								<!-- Toggle Buttons -->
+								<div class="form-row mb-3">
+								  <div class="form-check form-check-inline">
+									<input class="form-check-input" type="radio" name="entityType" id="societe" value="societe">
+									<label class="form-check-label" for="societe">Société</label>
+								  </div>
+								  <div class="form-check form-check-inline">
+									<input class="form-check-input" type="radio" name="entityType" id="personne" value="personne">
+									<label class="form-check-label" for="personne">Personne Physique</label>
+								  </div>
+								</div>
+							  
+								<!-- Société Fields -->
+								<div id="societeFields" style="display: none;">
+								  <div class="form-row">
+									<div class="form-group col-sm-6">
+									  <label for="societeName">Nom Société</label>
+									  <input type="text" class="form-control" name="societeName" id="societeName" placeholder="Nom Société">
+									</div>
+									<div class="form-group col-sm-6">
+									  <label for="societeMatricule">Matricule Société</label>
+									  <input type="text" class="form-control" name="societeMatricule" id="societeMatricule" placeholder="Matricule Société">
+									</div>
+								  </div>
+								  <div class="form-row">
+									<div class="form-group col-sm-6">
+									  <label for="societeEmail">Adresse Email Société</label>
+									  <input type="email" class="form-control" name="societeEmail" id="societeEmail" placeholder="Ex: societename@example.com">
+									</div>
+									<div class="form-group col-sm-6">
+									  <label for="societeTel">Numéro Téléphone Fax</label>
+									  <input type="tel" class="form-control" name="societeTel" id="societeTel" placeholder="..">
+									</div>
+								  </div>
+								  <div class="form-row">
+									<div class="form-group col-sm-6">
+									  <label for="societeMobile">Numéro Téléphone Mobile</label>
+									  <input type="tel" class="form-control" name="societeMobile" id="societeMobile" placeholder="..">
+									</div>
+									<div class="form-group col-sm-6">
+										<label for="societeMobile">Domaine d'activité</label>
+										<input type="text" class="form-control" name="societeDomaine" id="societeMobile" placeholder="..">
+									  </div>
+								  </div>
+								  <div class="form-row">
+									<div class="form-group col-sm-12">
+										<label for="societeAutre">Autre</label>
+										<textarea class="form-control" name="societeAutre" id="societeAutre" rows="5" placeholder="..."></textarea>
+									  </div>
+								  </div>
+								 
+									
+								</div>
+							  
+								<!-- Personne Physique Fields -->
+								<div id="personneFields" style="display: none;">
+								  <div class="form-row">
+									<div class="form-group col-sm-6">
+									  <label for="personneNom">Nom</label>
+									  <input type="text" class="form-control" name="personneNom" id="personneNom" placeholder="Nom">
+									</div>
+									<div class="form-group col-sm-6">
+									  <label for="personnePrenom">Prénom</label>
+									  <input type="text" class="form-control" name="personnePrenom" id="personnePrenom" placeholder="Prénom">
+									</div>
+								  </div>
+								  <div class="form-row">
+									<div class="form-group col-sm-6">
+									  <label for="personneEmail">Email</label>
+									  <input type="email" class="form-control" name="personneEmail" id="personneEmail" placeholder="Ex: myname@example.com">
+									</div>
+									<div class="form-group col-sm-6">
+									  <label for="personneAdresse">Adresse </label>
+									  <input type="text" class="form-control" name="personneAdresse" id="personneAdresse" placeholder="Adresse">
+									</div>
+								  </div>
+								  <div class="form-row">
+									<div class="form-group col-sm-6">
+										<label for="societeMobile">Numéro Téléphone Mobile</label>
+										<input type="tel" class="form-control" name="personneMobile" id="personneMobile" placeholder="..">
+									  </div>
+									<div class="form-group col-sm-6">
+										<label for="personneNationalite">Expertise</label>
+										<input type="text" class="form-control" name="personneExpertise" id="personneNationalite" placeholder="Expertise">
+									  </div>
+								  </div>
+								  <div class="form-row">
+									<div class="form-group col-sm-12">
+										<label for="personeAutre">Autre</label>
+										<textarea class="form-control" name="personeAutre" id="personeAutre" rows="5" placeholder="..."></textarea>
+									  </div>
+									
+								</div>
+							  
+								<!-- Submit Button -->
+								<button type="submit" class="btn btn-primary">Envoyer</button>
+							  </form>
 
 
-                                        </select>
-                                    </div>
-                                    <div class="form-group col-sm-6 col-md-6 col-lg-6">
-                                        <label for="inputState">Autre</label>
-                                        <select id="inputState" class="form-control">
-                                            <option selected>Choose...</option>
-                                            <option>Sociéte</option>
-                                            <option>Priveé</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="form-row">
-                                    <div class="form-group col-sm-12 col-md-12 col-lg-12">
-                                        <label for="exampleFormControlTextarea1">Message optionel</label>
-                                        <textarea class="form-control" id="exampleFormControlTextarea1"
-                                            rows="3"></textarea>
-                                    </div>
-                                </div>
-                                <button id="news-tc" type="submit" class="btn btn-primary">Envoyer</button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
     </section>
 
 
@@ -414,8 +458,7 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="myHead">
-                            <h3> Nous avons compilé quelques avis de patients que nous avons accompagnés dans leur
-                                démarche de soin en Tunisie. Découvrez leurs témoignages ici !</h3>
+                            <h3>Nous avons compilé quelques avis de patients que nous avons assistés durant leur séjour médical en Tunisie.</h3>
 
                         </div>
                     </div>
@@ -500,14 +543,14 @@
                         <div class="carousel-item">
                             <div class="col-md-2">
                                 <div class="card card-body">
-                                    <img class="img-fluid" src="assets/img/partners/a2.jpeg">
+                                    <img class="img-fluid" src="assets/img/partners/a2.png">
                                 </div>
                             </div>
                         </div>
                         <div class="carousel-item">
                             <div class="col-md-2">
                                 <div class="card card-body">
-                                    <img class="img-fluid" src="assets/img/partners/a3.jpg">
+                                    <img class="img-fluid" src="assets/img/partners/a3.png">
                                 </div>
                             </div>
                         </div>
@@ -521,28 +564,28 @@
                         <div class="carousel-item">
                             <div class="col-md-2">
                                 <div class="card card-body">
-                                    <img class="img-fluid" src="assets/img/partners/a5.jpg">
+                                    <img class="img-fluid" src="assets/img/partners/a5.png">
                                 </div>
                             </div>
                         </div>
                         <div class="carousel-item">
                             <div class="col-md-2">
                                 <div class="card card-body">
-                                    <img class="img-fluid" src="assets/img/partners/a6.jpg">
+                                    <img class="img-fluid" src="assets/img/partners/a6.png">
                                 </div>
                             </div>
                         </div>
                         <div class="carousel-item">
                             <div class="col-md-2">
                                 <div class="card card-body">
-                                    <img class="img-fluid" src="assets/img/partners/a7.jpg">
+                                    <img class="img-fluid" src="assets/img/partners/a7.png">
                                 </div>
                             </div>
                         </div>
                         <div class="carousel-item">
                             <div class="col-md-2">
                                 <div class="card card-body">
-                                    <img class="img-fluid" src="assets/img/partners/a8.jpg">
+                                    <img class="img-fluid" src="assets/img/partners/a8.png">
                                 </div>
                             </div>
                         </div>
@@ -556,7 +599,42 @@
                         <div class="carousel-item">
                             <div class="col-md-2">
                                 <div class="card card-body">
-                                    <img class="img-fluid" src="assets/img/partners/a10.jpg">
+                                    <img class="img-fluid" src="assets/img/partners/a10.png">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="col-md-2">
+                                <div class="card card-body">
+                                    <img class="img-fluid" src="assets/img/partners/a11.png">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="col-md-2">
+                                <div class="card card-body">
+                                    <img class="img-fluid" src="assets/img/partners/a12.png">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="col-md-2">
+                                <div class="card card-body">
+                                    <img class="img-fluid" src="assets/img/partners/a13.png">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="col-md-2">
+                                <div class="card card-body">
+                                    <img class="img-fluid" src="assets/img/partners/a14.png">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="col-md-2">
+                                <div class="card card-body">
+                                    <img class="img-fluid" src="assets/img/partners/a15.png">
                                 </div>
                             </div>
                         </div>
@@ -631,29 +709,27 @@
 					<h3>Contact</h3>
 					<ol>
 						<li><a>Responsable et Directeur Géneral :</a> </li>
-						<li>Mr Abdelmoumouni Hamami</li>
+						<li>Mr A.M.H</li>
 						<li>Emails: <a href="mailto:Management@tam.com.tn">Management@tam.com.tn </a></li>
 						<li>Phone: (+216) 54 773 197</li>
 					</ol>
 					<ol>
 						<li><a>Responsable Formation :</a> </li>
 						<li>Mr Mourad Laouamer </li>
-						<li>Emails: <a href="mailto:Management@tam.com.tn">formation@tam.com.tn </a></li>
+						<li>Emails: <a href="mailto:Formation@tam.com.tn">formation@tam.com.tn </a></li>
 						<li>Phone: (+216) 98 830 619</li>
 					</ol>
 					<ol>
 						<li><a>Responsable Commerciale :</a> </li>
 						<li>Mrs Amel Mounir </li>
-						<li>Emails: <a href="mailto:Management@tam.com.tn">partenariat@tam.com.tn </a></li>
+						<li>Emails: <a href="mailto:Partenariat@tam.com.tn">partenariat@tam.com.tn </a></li>
 						<li>Phone: (+216) 58 151 215</li>
 						<li>Fax: (+216) 79 390 790</li>
 					</ol>
 				</div>
 				<div class="col item social">
-					<a href="#" class="fab fa-facebook-f"></i></a>
-					<a href="#" class="fab fa-twitter"></i></a>
-					<a href="#" class="fab fa-linkedin"></i></a>
-					<a href="#" class="fas fa-envelope"></i></a>
+					<a href="https://www.facebook.com/societe.tam.16?mibextid=ZbWKwL" class="fab fa-facebook-f"></i></a>
+					<a href="mailto:Management@tam.com.tn" class="fas fa-envelope"></i></a>
 					<div class="foot-log">
 						<img src="assets/img/logo/4.png" alt="">
 						<img src="assets/img/logo/Tunis (2).png" style="
@@ -686,6 +762,8 @@
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="assets/js/jquery.waypoints.min.js"></script>
     <script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+
     <script src="assets/js/career.js"></script>
 
 
